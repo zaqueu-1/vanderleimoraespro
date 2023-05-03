@@ -5,7 +5,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
-  overflow-y: scroll;
 }
 
 * {
@@ -16,13 +15,13 @@ body {
   background: url(/images/bg.jpg) no-repeat top center fixed; 
   background-size: cover;
   width: 100%;
-  height: 100%;
-  margin-top: -2rem;
+  height: 100vh;
   z-index: -10;
   top: 0;
   left: 0;
   position:fixed;
   filter: brightness(0.4) grayscale(70%);
+  overflow:hidden;
 }
 
 .header {
