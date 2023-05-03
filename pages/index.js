@@ -3,7 +3,7 @@ import Header from './components/Header'
 import Links from './components/Links'
 import Bio from './components/Bio'
 import Bg from './components/Bg'
-import Patients from './components/patients'
+import Patients from './components/Patients'
 
 export default function Home() {
   return (
