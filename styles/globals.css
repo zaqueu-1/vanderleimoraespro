@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-container {
+  background: url(/images/bg.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -2rem;
+  z-index: -1;
+  position: fixed;
+  filter: brightness(0.4) grayscale(70%);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  z-index: 1;
+}
+
+.verified-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 25px;
+  font-size: 0.9rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  color: #3897F0;
+  border: 2px solid #3897F0;
+  background-color: white;
+  gap: .2rem;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 1rem;
+  margin-bottom: -.5rem;
+  animation: flow 3s infinite;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes flow {
+  0% {
+    transform: translateY(0);
+    box-shadow: 2px 8px 12px 0 rgb(135, 31, 31);
+    border: 2px solid rgba(255, 98, 98, 0.533);
+  }
+  50% {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 2px solid rgba(255, 0, 0, 0.812);
+  }
+  100% {
+    transform: translateY(0);
+    box-shadow: 2px 8px 12px 0 rgb(135, 31, 31);
+    border: 2px solid rgba(255, 98, 98, 0.533);
+  }
+  
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.header p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: -1.5rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: -1.2rem;
+}
+
+.small-icon {
+  font-size: 1.2rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 45px;
+  max-width: 650px;
+  min-width: 280px;
+  margin-top: .8rem;
+  background-color: red;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: white;
+  transition: all 0.4s;
+  gap: .5rem;
+}
+
+.link:hover {
+  background-color: #FE0000;
+  transform: scale(1.05);
+  border: 2px solid white;
+}
+
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 650px;
+  min-width: 280px;
+  background: rgba(54, 54, 54, 0.425);
+  backdrop-filter: blur( 6px );
+  -webkit-backdrop-filter: blur( 6px );
+  border-radius: 10px;
+  margin: 3.5rem auto;
+}
+
+.bio-img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.bio-block {
+  display: flex;
+  flex-direction: row;
+  padding: .5rem 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  max-width: 650px;
+  min-width: 280px;
+  margin-top: 1rem;
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+.bio-block p {
+  font-size: 1rem;
+  font-weight: 100;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+#subtitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(228, 226, 135);
+  margin-top: .3rem;
+  text-align: center;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.text-block p {
+  text-align:left;
+  font-size: 0.95rem;
+}
+
+@media only screen and (max-width:550px) {
+  .bio-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-block p {
+    font-size: 0.85rem;
+    margin-top: -.25rem;
+  }
+
+  .text-block {
+    margin-top: -.85rem;
+  }
+  
+}
+
+.patients-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 4rem auto;
+  max-width: 800px;
+  width: 90%;
+  flex-wrap: wrap;
+  min-width: 280px;
+  gap: 1.5rem;
+}
+
+.patients {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(0.85);
+}
+
+.patients:hover {
+  transform: scale(1.05);
+  filter: grayscale(0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: rgb(0, 0, 0);
+  }
+}
