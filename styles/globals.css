@@ -82,12 +82,14 @@ body {
 .header h1 {
   font-size: 2.5rem;
   font-weight: 500;
+  color: white;
 }
 
 .header p {
   font-size: 1rem;
   font-weight: 300;
   margin-top: -1.5rem;
+  color: rgb(217, 215, 215);
 }
 
 .links {
