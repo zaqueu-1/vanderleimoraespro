@@ -7,7 +7,7 @@ function Bio() {
       <div className='bio-container'>
         <div className="bio-block">
           <div className="image-block">
-              <Image src='/.././public/images/avatar-dl.png' className='bio-img' height='180' width='180' />
+              <Image src='/images/avatar-dl.png' className='bio-img' height='180' width='180' />
               <p id='subtitle'>Vanderlei Moraes | Treinador</p>
           </div>
           <div className="text-block">
