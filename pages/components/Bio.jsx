@@ -8,7 +8,8 @@ function Bio() {
         <div className="bio-block">
           <div className="image-block">
               <Image src='/images/avatar-dl.png' className='bio-img' height='180' width='180' />
-              <p id='subtitle'>Vanderlei Moraes | Treinador</p>
+              <p id='subtitle'>Vanderlei Moraes</p>
+              <p id='subtitle-small'>Bodybuilding Coach</p>
           </div>
           <div className="text-block">
               <p>Minha história no mundo da musculação deu início em 2017. </p>

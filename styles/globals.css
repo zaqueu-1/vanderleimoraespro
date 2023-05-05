@@ -174,12 +174,19 @@ body {
   margin-top: 0;
 }
 
-#subtitle {
-  font-size: 0.9rem;
+#subtitle, #subtitle-small {
+  font-size: 1rem;
   font-weight: 500;
   color: rgb(228, 226, 135);
   margin-top: .3rem;
   text-align: center;
+}
+
+#subtitle-small {
+  margin-top: -1rem;
+  font-size: 0.8rem;
+  color: rgb(184, 184, 184);
+
 }
 
 .text-block {
