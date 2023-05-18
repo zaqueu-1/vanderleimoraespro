@@ -109,25 +109,53 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  height: 45px;
-  max-width: 650px;
+  width: 100%;
+  height: 205px;
+  max-width: 505px;
   min-width: 280px;
   margin-top: .8rem;
-  background-color: red;
+  background-color: transparent;
   border-radius: 16px;
   border: 2px solid transparent;
   text-decoration: none;
-  font-size: 0.9rem;
-  color: white;
   transition: all 0.4s;
   gap: .5rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.l1 {
+  background-image: url('/images/c11.jpg');
+  filter: contrast(0.8) grayscale(0.2);
+}
+
+.l2 {
+  background-image: url('/images/c12.jpg');
+  filter: contrast(0.8) grayscale(0.2);
+}
+
+.link-desc {
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: .5rem;
+  padding: .75rem;
+  background-color: red;
+  width: 90%;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem;
+  border-radius: 8px;
 }
 
 .link:hover {
-  background-color: #FE0000;
   transform: scale(1.05);
-  border: 2px solid white;
+  border: 2px solid red;
 }
 
 .bio-container {
@@ -212,6 +240,20 @@ body {
 
   .text-block {
     margin-top: -.85rem;
+  }
+
+  .link {
+    width: 90%;
+  }
+  
+  .l2 {
+    background-position: 80%;
+  }
+  
+  .link-desc {
+    font-size: .8rem;
+    padding: .5rem;
+    background-color: red;
   }
   
 }
