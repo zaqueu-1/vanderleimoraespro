@@ -1,21 +1,15 @@
 import React from 'react'
-import { BsYoutube } from 'react-icons/bs'
-import { CgGym } from 'react-icons/cg'
+import Image from 'next/image'
 
 function Links() {
   return (
     <div className='links'>
-        <a href="https://wa.me/24981236824" className='link l1' target="_blank" rel="noreferrer">
-            <div className="link-desc">
-              <CgGym className='small-icon' />
-              <span>FAÇA PARTE DO TIME | CONSULTORIA</span>
-            </div>
+        <a href="https://wa.me/24981236824" className='link' target="_blank" rel="noreferrer">
+          <Image className='img' src='/images/10.png' width='505' height='205' />
         </a>
-        <a href="https://www.youtube.com/channel/UCEz26k3gcRbSirXZlVg7KuA" className='link l2' target="_blank" rel="noreferrer">
-            <div className="link-desc">
-              <BsYoutube className='small-icon' /> 
-              <span>ACESSE MEU CONTEÚDO | YOUTUBE</span>
-            </div>
+
+        <a href="https://www.youtube.com/channel/UCEz26k3gcRbSirXZlVg7KuA" className='link' target="_blank" rel="noreferrer">
+        <Image className='img' src='/images/13.png' width='505' height='205' />
         </a>
     </div>
   )
