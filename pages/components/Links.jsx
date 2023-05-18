@@ -9,7 +9,7 @@ function Links() {
         </a>
 
         <a href="https://www.youtube.com/channel/UCEz26k3gcRbSirXZlVg7KuA" className='link' target="_blank" rel="noreferrer">
-        <Image className='img' src='/images/13.png' width='505' height='205' />
+        <Image className='img' src='/images/17.png' width='505' height='205' />
         </a>
     </div>
   )
